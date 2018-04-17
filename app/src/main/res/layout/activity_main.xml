@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:theme="@style/Theme.AppCompat.DayNight">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/nightID"
+                    android:layout_width="166dp"
+                    android:layout_height="111dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="200dp"
+                    app:srcCompat="@drawable/nightoff"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="127dp" />
+
+                <TextView
+                    android:id="@+id/valueNightID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/seekBarValueDefault"
+                    android:textColor="@color/colorWhite" />
+
+                <SeekBar
+                    android:id="@+id/barNightID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="40dp"
+                    android:max="100"
+                    android:progress="50"
+                    android:scrollbarSize="0dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/lightWindID"
+                    android:layout_width="166dp"
+                    android:layout_height="111dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/lightwindoff"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="127dp" />
+
+                <TextView
+                    android:id="@+id/valueLightWindID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="45dp"
+                    android:text="@string/seekBarValueDefault"
+                    android:textColor="@color/colorWhite" />
+
+                <SeekBar
+                    android:id="@+id/barLightWindID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="65dp"
+                    android:max="100"
+                    android:progress="50"
+                    android:scrollbarSize="0dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/heavyWindID"
+                    android:layout_width="166dp"
+                    android:layout_height="111dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/heavywindoff"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="127dp" />
+
+                <TextView
+                    android:id="@+id/valueHeavyWindID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="45dp"
+                    android:text="@string/seekBarValueDefault"
+                    android:textColor="@color/colorWhite" />
+
+                <SeekBar
+                    android:id="@+id/barHeavyWindID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="65dp"
+                    android:max="100"
+                    android:progress="50"
+                    android:scrollbarSize="0dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/lightRainID"
+                    android:layout_width="166dp"
+                    android:layout_height="111dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/lightrainoff"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="127dp" />
+
+                <TextView
+                    android:id="@+id/valueLightRainID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="45dp"
+                    android:text="@string/seekBarValueDefault"
+                    android:textColor="@color/colorWhite" />
+
+                <SeekBar
+                    android:id="@+id/barLightRainID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="65dp"
+                    android:max="100"
+                    android:progress="50"
+                    android:scrollbarSize="0dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/mediumRainID"
+                    android:layout_width="166dp"
+                    android:layout_height="111dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/mediumrainoff"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="127dp" />
+
+                <TextView
+                    android:id="@+id/valueMediumRainID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="45dp"
+                    android:text="@string/seekBarValueDefault"
+                    android:textColor="@color/colorWhite" />
+
+                <SeekBar
+                    android:id="@+id/barMediumRainID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="65dp"
+                    android:max="100"
+                    android:progress="50"
+                    android:scrollbarSize="0dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/heavyRainID"
+                    android:layout_width="166dp"
+                    android:layout_height="111dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/heavyrainoff"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="127dp" />
+
+                <TextView
+                    android:id="@+id/valueHeavyRainID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="45dp"
+                    android:text="@string/seekBarValueDefault"
+                    android:textColor="@color/colorWhite" />
+
+                <SeekBar
+                    android:id="@+id/barHeavyRainID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="65dp"
+                    android:max="100"
+                    android:progress="50"
+                    android:scrollbarSize="0dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/thunderID"
+                    android:layout_width="166dp"
+                    android:layout_height="111dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/thunderoff"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="127dp" />
+
+                <TextView
+                    android:id="@+id/valueThunderID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="45dp"
+                    android:text="@string/seekBarValueDefault"
+                    android:textColor="@color/colorWhite" />
+
+                <SeekBar
+                    android:id="@+id/barThunderID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="65dp"
+                    android:max="100"
+                    android:progress="50"
+                    android:scrollbarSize="0dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                android:id="@+id/forestID"
+                android:layout_width="166dp"
+                android:layout_height="111dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="200dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/forestoff"
+                tools:layout_editor_absoluteX="71dp"
+                tools:layout_editor_absoluteY="127dp" />
+
+                <TextView
+                    android:id="@+id/valueForestID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="45dp"
+                    android:text="@string/seekBarValueDefault"
+                    android:textColor="@color/colorWhite" />
+
+                <SeekBar
+                    android:id="@+id/barForestID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="65dp"
+                    android:max="100"
+                    android:progress="50"
+                    android:scrollbarSize="0dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/birdsID"
+                    android:layout_width="166dp"
+                    android:layout_height="111dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/birdsoff"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="127dp" />
+
+                <TextView
+                    android:id="@+id/valueBirdsID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="45dp"
+                    android:text="@string/seekBarValueDefault"
+                    android:textColor="@color/colorWhite" />
+
+                <SeekBar
+                    android:id="@+id/barBirdsID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="65dp"
+                    android:max="100"
+                    android:progress="50"
+                    android:scrollbarSize="0dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/cityID"
+                    android:layout_width="166dp"
+                    android:layout_height="111dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/cityoff"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="127dp" />
+
+                <TextView
+                    android:id="@+id/valueCityID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="45dp"
+                    android:text="@string/seekBarValueDefault"
+                    android:textColor="@color/colorWhite" />
+
+                <SeekBar
+                    android:id="@+id/barCityID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="65dp"
+                    android:max="100"
+                    android:progress="50"
+                    android:scrollbarSize="0dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/carsID"
+                    android:layout_width="166dp"
+                    android:layout_height="111dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/carsoff"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="127dp" />
+
+                <TextView
+                    android:id="@+id/valueCarsID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="45dp"
+                    android:text="@string/seekBarValueDefault"
+                    android:textColor="@color/colorWhite" />
+
+                <SeekBar
+                    android:id="@+id/barCarsID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="65dp"
+                    android:max="100"
+                    android:progress="50"
+                    android:scrollbarSize="0dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/fireplaceID"
+                    android:layout_width="166dp"
+                    android:layout_height="111dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/fireplaceoff"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="127dp" />
+
+                <TextView
+                    android:id="@+id/valueFireplaceID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="45dp"
+                    android:text="@string/seekBarValueDefault"
+                    android:textColor="@color/colorWhite" />
+
+                <SeekBar
+                    android:id="@+id/barFireplaceID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="65dp"
+                    android:max="100"
+                    android:progress="50"
+                    android:scrollbarSize="0dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/snowStormID"
+                    android:layout_width="166dp"
+                    android:layout_height="111dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/snowstormoff"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="127dp" />
+
+                <TextView
+                    android:id="@+id/valueSnowStormID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="45dp"
+                    android:text="@string/seekBarValueDefault"
+                    android:textColor="@color/colorWhite" />
+
+                <SeekBar
+                    android:id="@+id/barSnowStormID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="65dp"
+                    android:max="100"
+                    android:progress="50"
+                    android:scrollbarSize="0dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/oceanID"
+                    android:layout_width="166dp"
+                    android:layout_height="111dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/oceanoff"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="127dp" />
+
+                <TextView
+                    android:id="@+id/valueOceanID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="45dp"
+                    android:text="@string/seekBarValueDefault"
+                    android:textColor="@color/colorWhite" />
+
+                <SeekBar
+                    android:id="@+id/barOceanID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="65dp"
+                    android:max="100"
+                    android:progress="50"
+                    android:scrollbarSize="0dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/riverID"
+                    android:layout_width="166dp"
+                    android:layout_height="111dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/riveroff"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="127dp" />
+
+                <TextView
+                    android:id="@+id/valueRiverID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="45dp"
+                    android:text="@string/seekBarValueDefault"
+                    android:textColor="@color/colorWhite" />
+
+                <SeekBar
+                    android:id="@+id/barRiverID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="65dp"
+                    android:max="100"
+                    android:progress="50"
+                    android:scrollbarSize="0dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/waterfallID"
+                    android:layout_width="166dp"
+                    android:layout_height="111dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/waterfalloff"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="127dp" />
+
+                <TextView
+                    android:id="@+id/valueWaterfallID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="45dp"
+                    android:text="@string/seekBarValueDefault"
+                    android:textColor="@color/colorWhite" />
+
+                <SeekBar
+                    android:id="@+id/barWaterfallID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="65dp"
+                    android:max="100"
+                    android:progress="50"
+                    android:scrollbarSize="0dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            </RelativeLayout>
+
+        </TableLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
